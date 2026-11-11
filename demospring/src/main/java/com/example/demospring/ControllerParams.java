@@ -31,7 +31,7 @@ public class ControllerParams {
         return lst;
     }
 
-    @PostMapping ("/param/nuevo")
+    @PostMapping ("/params/nuevo")
     public Map<String,Object> guardarParam(@RequestBody Map<String,Object> nuevo) {
         params.put(nuevo.get("id").toString(), nuevo.get("valor"));   
         return nuevo;
